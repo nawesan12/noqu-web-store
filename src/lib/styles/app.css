@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Trispace:wght@100..800&display=swap');
+
 :root {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -13,13 +15,14 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+	min-height: 0;
 }
 html {
 	font-size: 1.125rem;
 	scroll-behavior: smooth;
 }
 body {
-	background: #292929;
+	background: #001;
 	font-family:
 		system-ui,
 		-apple-system,
@@ -32,7 +35,7 @@ body {
 		Open Sans,
 		Helvetica Neue,
 		sans-serif;
-	overflow: hidden;
+	overflow-x: hidden;
 }
 svg {
 	height: 5vh;
@@ -55,4 +58,36 @@ button {
 	font-size: inherit;
 	font-weight: inherit;
 	outline: 0;
+}
+
+.space-mono-regular {
+	font-family: 'Space Mono', monospace;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.space-mono-bold {
+	font-family: 'Space Mono', monospace;
+	font-weight: 700;
+	font-style: normal;
+}
+
+.space-mono-regular-italic {
+	font-family: 'Space Mono', monospace;
+	font-weight: 400;
+	font-style: italic;
+}
+
+.space-mono-bold-italic {
+	font-family: 'Space Mono', monospace;
+	font-weight: 700;
+	font-style: italic;
+}
+
+.trispace {
+	font-family: 'Trispace', sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 700;
+	font-style: normal;
+	font-variation-settings: 'wdth' 100;
 }

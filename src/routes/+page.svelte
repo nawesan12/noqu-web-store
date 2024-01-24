@@ -1,1 +1,5 @@
-<h1>Boba la que lee</h1>
+<script>
+	import Banner from '$lib/components/Banner/Banner.svelte';
+</script>
+
+<Banner />
