@@ -1,4 +1,4 @@
-<section class="max-w-4xl mx-auto block px-4 text-3xl">
+<section class="max-w-4xl mx-auto block p-4 text-3xl">
 	<dl class="-my-3 divide-y divide-gray-100 text-sm">
 		<div class="grid grid-cols-1 gap-1 py-3 sm:grid-cols-3 sm:gap-4">
 			<dt class="font-medium text-gray-900">Modelo</dt>

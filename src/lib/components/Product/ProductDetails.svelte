@@ -4,6 +4,7 @@
 	import Breadcrumb from './UniqueProduct/Breadcrumb.svelte';
 	import ColorSelect from './UniqueProduct/ColorSelect.svelte';
 	import Description from './UniqueProduct/Description.svelte';
+	import Details from './UniqueProduct/Details.svelte';
 	import Price from './UniqueProduct/Price.svelte';
 	import SelectSize from './UniqueProduct/SelectSize.svelte';
 	import Title from './UniqueProduct/Title.svelte';
@@ -41,4 +42,4 @@
 	</div>
 </section>
 
-<!-- <Details /> -->
+<Details />
