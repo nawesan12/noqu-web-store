@@ -3,7 +3,7 @@
 </script>
 
 <svelte:head>
-	<title>Noqu 137 | Tienda</title>
+	<title>Noqu 137</title>
 </svelte:head>
 
 <slot />

@@ -73,7 +73,7 @@
 </script>
 
 <div
-	class={cn('relative', className)}
+	class={cn('relative lg:max-w-4xl mx-auto md:px-0', className)}
 	use:emblaCarouselSvelte={{
 		options: {
 			container: '[data-embla-container]',

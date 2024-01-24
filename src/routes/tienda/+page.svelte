@@ -1,13 +1,12 @@
 <script lang="ts">
 	import Collection from '$lib/components/ProductCollection/Collection.svelte';
 	import * as Carousel from '$lib/components/ui/carousel/index.js';
-	import Breadcrumb from '$lib/components/Product/UniqueProduct/Breadcrumb.svelte';
 	import AspectRatio from '$lib/components/ui/aspect-ratio/aspect-ratio.svelte';
 	import Footer from '$lib/components/Footer/Footer.svelte';
 </script>
 
 <main class="p-4 overflow-x-hidden">
-	<Breadcrumb />
+	<h1 class="text-left m-8 text-6xl font-bold underline">Colecciones</h1>
 
 	<Carousel.Root>
 		<Carousel.Content>
@@ -41,6 +40,10 @@
 	</Carousel.Root>
 
 	<Collection />
+
+	<section class="quoteblock">
+		<p class="">Brave clothing for the bravest souls. Stay bold.</p>
+	</section>
 
 	<Footer />
 </main>
