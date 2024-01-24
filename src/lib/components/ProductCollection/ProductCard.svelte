@@ -6,7 +6,7 @@
 	/>
 
 	<div class="mt-1.5">
-		<p class="text-xs text-white">Space Grey</p>
+		<p class="text-xs text-black">Space Grey</p>
 
 		<div class="mt-1.5 flex gap-1">
 			<form>
@@ -14,7 +14,7 @@
 					<legend class="sr-only">Color</legend>
 				</fieldset>
 
-				<div class="flex flex-wrap justify-center gap-1 [&:hover_label]:opacity-75">
+				<div class="flex flex-wrap justify-center gap-4 [&:hover_label]:opacity-75">
 					<div>
 						<input type="checkbox" id="ColorSg" class="sr-only" />
 
@@ -74,11 +74,11 @@
 		</div>
 
 		<div class="mt-3 flex justify-between text-sm">
-			<h3 class="text-white group-hover:underline group-hover:underline-offset-4">
+			<h3 class="text-black group-hover:underline group-hover:underline-offset-4">
 				Small Headphones
 			</h3>
 
-			<p class="text-white">$299</p>
+			<p class="text-black">$299</p>
 		</div>
 	</div>
 </a>
