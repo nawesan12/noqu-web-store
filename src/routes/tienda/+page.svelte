@@ -3,6 +3,7 @@
 	import * as Carousel from '$lib/components/ui/carousel/index.js';
 	import Breadcrumb from '$lib/components/Product/UniqueProduct/Breadcrumb.svelte';
 	import AspectRatio from '$lib/components/ui/aspect-ratio/aspect-ratio.svelte';
+	import Footer from '$lib/components/Footer/Footer.svelte';
 </script>
 
 <main class="p-4 overflow-x-hidden">
@@ -40,4 +41,6 @@
 	</Carousel.Root>
 
 	<Collection />
+
+	<Footer />
 </main>
