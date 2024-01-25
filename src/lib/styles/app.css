@@ -185,12 +185,8 @@ p {
 	background: white;
 }
 
-.quoteblock {
-	margin-block: 2rem;
-}
-
 .quoteblock p {
 	line-height: 0.8;
-	font-size: 12rem;
-	font-weight: bold;
+	/* font-size: 12rem; */
+	font-size: clamp(80px, 17vw, 170px);
 }

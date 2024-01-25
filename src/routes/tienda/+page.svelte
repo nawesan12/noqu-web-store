@@ -2,11 +2,12 @@
 	import Collection from '$lib/components/ProductCollection/Collection.svelte';
 	import * as Carousel from '$lib/components/ui/carousel/index.js';
 	import AspectRatio from '$lib/components/ui/aspect-ratio/aspect-ratio.svelte';
+	import FAQ from '$lib/components/FAQ/FAQ.svelte';
 	import Footer from '$lib/components/Footer/Footer.svelte';
 </script>
 
 <main class="p-4 overflow-x-hidden">
-	<h1 class="text-left m-8 text-6xl font-bold underline">Colecciones</h1>
+	<h1 class="lg:text-left m-8 lg:text-6xl text-4xl text-center font-bold underline">Colecciones</h1>
 
 	<Carousel.Root>
 		<Carousel.Content>
@@ -41,9 +42,13 @@
 
 	<Collection />
 
-	<section class="quoteblock">
-		<p class="">Brave clothing for the bravest souls. Stay bold.</p>
+	<section class="quoteblock my-8 mb-24">
+		<p class="font-bold text-balance block max-w-min lg:max-w-6xl mx-auto">
+			Brave clothing for the bravest souls. Stay bold.
+		</p>
 	</section>
+
+	<FAQ />
 
 	<Footer />
 </main>
