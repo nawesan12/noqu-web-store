@@ -1,5 +1,6 @@
 <script>
 	import '$lib/styles/app.css';
+	import '$lib/styles/animations.css';
 </script>
 
 <svelte:head>

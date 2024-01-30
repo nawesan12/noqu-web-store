@@ -1,8 +1,8 @@
 <script>
-	import AspectRatio from '../ui/aspect-ratio/aspect-ratio.svelte';
+	import { fly } from 'svelte/transition';
 </script>
 
-<a href="/producto" class="group block">
+<a transition:fly={{ y: 200, duration: 2000 }} href="/producto" class="group block">
 	<img
 		src="https://images.unsplash.com/photo-1592921870789-04563d55041c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
 		alt=""
