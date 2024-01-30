@@ -26,14 +26,14 @@
 				<br /> <br />
 				<span>
 					<Dialog.Root>
-						<Dialog.Trigger
-							><button class="text-blue-600 font-semibold drop-shadow-sm shadow-purple-400">
+						<Dialog.Trigger>
+							<button class="text-blue-600 font-semibold drop-shadow-sm shadow-purple-400">
 								Mira este video
 							</button>
 						</Dialog.Trigger>
 						<Dialog.Content>
 							<Dialog.Header>
-								<Dialog.Title>Que es 137?</Dialog.Title>
+								<Dialog.Title>Que significa la 137?</Dialog.Title>
 								<Dialog.Description>
 									<YoutubeIFrame />
 								</Dialog.Description>
