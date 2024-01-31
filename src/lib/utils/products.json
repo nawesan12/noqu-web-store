@@ -4,27 +4,43 @@
     "name": "Hito | Boxy Tee",
     "image": "https://images.unsplash.com/photo-1586396847415-2c76ae7e79fc?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "colors": ["black", "white"],
-    "price": 299
+    "price": 299,
+    "lore": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "collection": "C-137",
+    "fabric": "Jersey 24/1",
+    "style": "Boxy"
   },
   {
     "id": 2,
     "name": "Nakaru | Boxy Tee",
     "image": "https://images.unsplash.com/photo-1631902112544-2271267abb73?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "colors": ["black", "white"],
-    "price": 299
+    "price": 299,
+    "lore": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "collection": "C-137",
+    "fabric": "Jersey 24/1",
+    "style": "Boxy"
   },
   {
     "id": 3,
     "name": "Hito | Bucket Hat",
     "image": "https://images.unsplash.com/photo-1585497115342-e129d5e533ea?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "colors": ["black", "white"],
-    "price": 299
+    "price": 299,
+    "lore": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "collection": "C-137",
+    "fabric": "Canvas",
+    "style": "Bucket Hat"
   },
   {
     "id": 4,
     "name": "Cargo | Cargo Pants",
     "image": "https://images.unsplash.com/photo-1623596305214-19f21cbf48ee?q=80&w=1854&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "colors": ["black", "white"],
-    "price": 299
+    "price": 299,
+    "lore": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    "collection": "C-137",
+    "fabric": "Denim",
+    "style": "Cargo Pants"
   }
 ]

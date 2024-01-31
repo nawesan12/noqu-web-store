@@ -32,7 +32,6 @@
 		<li>
 			<a href={`/tienda`} class="block transition hover:text-gray-700">
 				{'Coleccion'}
-				<!--  -->
 			</a>
 		</li>
 
