@@ -1,5 +1,6 @@
 <script>
 	import ProductCard from './ProductCard.svelte';
+	import products from '$lib/utils/products.json';
 </script>
 
 <section>
@@ -14,18 +15,16 @@
 		</header>
 
 		<ul class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-			<li>
-				<ProductCard />
-			</li>
-			<li>
-				<ProductCard />
-			</li>
-			<li>
-				<ProductCard />
-			</li>
-			<li>
-				<ProductCard />
-			</li>
+			{#each products as product}
+				<li>
+					<ProductCard
+						name={product.name}
+						image={product.image}
+						colors={product.colors}
+						price={product.price}
+					/>
+				</li>
+			{/each}
 		</ul>
 	</div>
 </section>

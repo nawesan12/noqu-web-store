@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import AddToCart from './UniqueProduct/AddToCart.svelte';
 	import AddToFavorites from './UniqueProduct/AddToFavorites.svelte';
 	import Breadcrumb from './UniqueProduct/Breadcrumb.svelte';
@@ -9,28 +9,27 @@
 	import ProductImage from './UniqueProduct/ProductImage.svelte';
 	import SelectSize from './UniqueProduct/SelectSize.svelte';
 	import Title from './UniqueProduct/Title.svelte';
+
+	export let data: any;
 </script>
 
 <section class="text-gray-700 body-font overflow-hidden">
 	<div class="container px-5 mb-12 mx-auto">
-		<Breadcrumb />
-		<!-- <Breadcrumb {collection} {producto} /> -->
+		<Breadcrumb name={data.product.name} />
 		<div class="lg:w-4/5 mx-auto flex flex-wrap">
-			<ProductImage
-				image="https://images.unsplash.com/photo-1647628632602-99542ede0930?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-			/>
+			<ProductImage image={data.product.image} />
 			<div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
-				<Title />
+				<Title name={data.product.name} />
 				<Description lore={''} />
 
 				<div class="flex mt-6 items-center pb-5 border-b-2 border-gray-200 mb-5">
-					<ColorSelect />
+					<ColorSelect colors={data.product.colors} defaultColor={data.color} />
 					<div class="flex ml-6 items-center">
 						<SelectSize />
 					</div>
 				</div>
 				<footer class="flex">
-					<Price />
+					<Price price={data.product.price} />
 					<AddToCart />
 					<AddToFavorites />
 				</footer>

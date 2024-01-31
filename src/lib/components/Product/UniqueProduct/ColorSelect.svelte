@@ -1,6 +1,14 @@
-<div class="flex">
+<script lang="ts">
+	export let colors: string[];
+	export let defaultColor: string;
+</script>
+
+<section class="flex gap-2">
 	<span class="mr-3">Color</span>
-	<button class="border-2 bg-white border-black rounded-full w-6 h-6 focus:outline-none"></button>
-	<button class="border-2 border-gray-300 ml-1 bg-black rounded-full w-6 h-6 focus:outline-none"
-	></button>
-</div>
+	{#each colors as color}
+		<button
+			on:click={() => (defaultColor = color)}
+			class="bg-{color} color border-2 outline border-black rounded-full w-6 h-6"
+		></button>
+	{/each}
+</section>

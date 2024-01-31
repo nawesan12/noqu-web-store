@@ -1,3 +1,7 @@
+<script lang="ts">
+	export let name: string;
+</script>
+
 <nav aria-label="Breadcrumb" class="my-10">
 	<ol class="flex items-center gap-1 text-sm text-gray-600">
 		<li>
@@ -26,7 +30,7 @@
 		</li>
 
 		<li>
-			<a href={`/tienda/$`} class="block transition hover:text-gray-700">
+			<a href={`/tienda`} class="block transition hover:text-gray-700">
 				{'Coleccion'}
 				<!--  -->
 			</a>
@@ -43,7 +47,7 @@
 		</li>
 
 		<li>
-			<p class="block transition hover:text-gray-700">Producto</p>
+			<p class="block transition hover:text-gray-700">{name}</p>
 		</li>
 	</ol>
 </nav>

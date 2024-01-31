@@ -1,88 +1,57 @@
-<script>
-	import { fly } from 'svelte/transition';
+<script lang="ts">
+	import AddToCartFromCard from './AddToCartFromCard.svelte';
+
+	export let image: string;
+	export let name: string;
+	export let colors: string[];
+	export let price: number;
+
+	let selectedColor = colors[0];
 </script>
 
-<a transition:fly={{ y: 200, duration: 2000 }} href="/producto" class="group block">
-	<img
-		src="https://images.unsplash.com/photo-1592921870789-04563d55041c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
-		alt=""
-		class="h-[350px] w-full object-cover sm:h-[450px]"
-	/>
+<article class="relative group block">
+	<AddToCartFromCard product={{ image, name, selectedColor, price }} />
+	<a href={`/${name}?color=${selectedColor}`}>
+		<img src={image} alt="" class="h-[350px] w-full object-cover sm:h-[450px]" />
+	</a>
 
 	<div class="mt-1.5">
-		<p class="text-xs text-black">Space Grey</p>
+		<p class="text-xs capitalize font-semibold text-black">{selectedColor}</p>
 
 		<div class="mt-1.5 flex gap-1">
-			<form>
+			<section>
 				<fieldset>
 					<legend class="sr-only">Color</legend>
 				</fieldset>
 
-				<div class="flex flex-wrap justify-center gap-4 [&:hover_label]:opacity-75">
-					<div>
-						<input type="checkbox" id="ColorSg" class="sr-only" />
+				<ul class="flex flex-wrap justify-center gap-4 [&:hover_label]:opacity-75">
+					<!---->
+					{#each colors as color}
+						<li>
+							<button on:click={() => (selectedColor = color)}>
+								<input type="checkbox" id="ColorSg" class="sr-only" />
 
-						<label
-							for="ColorSg"
-							class="block h-4 w-4 cursor-pointer rounded-full bg-[#595759] transition hover:!opacity-100"
-						>
-							<span class="sr-only"> Space Gray </span>
-						</label>
-					</div>
-
-					<div>
-						<input type="checkbox" id="ColorS" class="sr-only" />
-
-						<label
-							for="ColorS"
-							class="block h-4 w-4 cursor-pointer rounded-full bg-[#d2d3d4] transition hover:!opacity-100"
-						>
-							<span class="sr-only"> Silver </span>
-						</label>
-					</div>
-
-					<div>
-						<input type="checkbox" id="ColorP" class="sr-only" />
-
-						<label
-							for="ColorP"
-							class="block h-4 w-4 cursor-pointer rounded-full bg-[#d89f97] transition hover:!opacity-100"
-						>
-							<span class="sr-only"> Pink </span>
-						</label>
-					</div>
-
-					<div>
-						<input type="checkbox" id="ColorG" class="sr-only" />
-
-						<label
-							for="ColorG"
-							class="block h-4 w-4 cursor-pointer rounded-full bg-[#afbfab] transition hover:!opacity-100"
-						>
-							<span class="sr-only"> Pink </span>
-						</label>
-					</div>
-
-					<div>
-						<input type="checkbox" id="ColorSb" class="sr-only" />
-
-						<label
-							for="ColorSb"
-							class="block h-4 w-4 cursor-pointer rounded-full bg-[#91a5bb] transition hover:!opacity-100"
-						>
-							<span class="sr-only"> Pink </span>
-						</label>
-					</div>
-				</div>
-			</form>
+								<label
+									for="ColorSg"
+									class="block h-4 w-4 border border-black cursor-pointer rounded-full bg-{color} transition hover:!opacity-100"
+								>
+									<span class="sr-only"> {color} </span>
+								</label>
+							</button>
+						</li>
+					{/each}
+				</ul>
+			</section>
 		</div>
 
-		<div class="mt-3 flex justify-between text-sm">
-			<h3 class="text-black group-hover:underline group-hover:underline-offset-4">
-				Small Headphones
-			</h3>
+		<a href="/producto">
+			<div class="mt-3 flex justify-between text-sm">
+				<h3 class="text-black hover:underline group-hover:underline-offset-4">
+					{name}
+				</h3>
 
-			<p class="text-black">$299</p>
-		</div>
+				<p class="text-black">${price}</p>
+			</div>
+		</a>
 	</div>
-</a>
+</article>
