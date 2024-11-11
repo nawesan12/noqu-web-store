@@ -10,7 +10,7 @@
 </script>
 
 <Menu />
-<main class="p-4 overflow-x-hidden">
+<main class="p-4 lg:max-w-6xl mx-auto overflow-x-hidden">
 	<Carousel.Root>
 		<Carousel.Content>
 			<Carousel.Item>

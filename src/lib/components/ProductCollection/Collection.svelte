@@ -6,7 +6,7 @@
 </script>
 
 <section>
-	<div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
+	<div class="mx-auto lg:max-w-6xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
 		<header class="text-center">
 			<h2 class="text-4xl font-bold text-black">{collection.name}</h2>
 
