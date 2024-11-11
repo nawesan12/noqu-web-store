@@ -3,7 +3,7 @@
 	import type { Product } from '$lib/types/products';
 
 	/** @type {import('./$types').PageData} */
-	export let data: Product;
+	export let data: { title: string; color: string; product: Product };
 </script>
 
 <ProductDetails {data} />

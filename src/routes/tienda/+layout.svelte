@@ -6,5 +6,4 @@
 	<title>Noqu 137 | Tienda</title>
 </svelte:head>
 
-<Toaster />
 <slot />

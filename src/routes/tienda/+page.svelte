@@ -11,12 +11,6 @@
 
 <Menu />
 <main class="p-4 overflow-x-hidden">
-	<h1
-		class="m-8 lg:max-w-7xl mx-auto lg:font-semibold lg:text-center text-4xl text-center font-bold lg:px-8"
-	>
-		<span>Nueva coleccion C-137</span>
-	</h1>
-
 	<Carousel.Root>
 		<Carousel.Content>
 			<Carousel.Item>

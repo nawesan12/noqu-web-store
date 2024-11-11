@@ -1,4 +1,5 @@
 <script lang="ts">
+	import type { Product } from '$lib/types/products';
 	import AddToCart from './UniqueProduct/AddToCart.svelte';
 	import AddToFavorites from './UniqueProduct/AddToFavorites.svelte';
 	import Breadcrumb from './UniqueProduct/Breadcrumb.svelte';
@@ -10,7 +11,7 @@
 	import SelectSize from './UniqueProduct/SelectSize.svelte';
 	import Title from './UniqueProduct/Title.svelte';
 
-	export let data: any;
+	export let data: { title: string; color: string; product: Product };
 </script>
 
 <section class="text-gray-700 body-font overflow-hidden">
@@ -30,7 +31,7 @@
 				</div>
 				<footer class="flex">
 					<Price price={data.product.price} />
-					<AddToCart />
+					<AddToCart product={data.product} color={data.color} />
 					<AddToFavorites />
 				</footer>
 			</div>
