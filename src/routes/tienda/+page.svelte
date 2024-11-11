@@ -10,29 +10,9 @@
 <Menu />
 <main class="p-4 overflow-x-hidden">
 	<h1
-		class="m-8 lg:text-4xl lg:font-semibold lg:text-left text-4xl text-center font-bold flex justify-between items-center lg:px-8"
+		class="m-8 lg:max-w-7xl mx-auto lg:font-semibold lg:text-center text-4xl text-center font-bold lg:px-8"
 	>
-		<span>Colecciones</span>
-
-		<span
-			><svg
-				width="34"
-				height="34"
-				viewBox="0 0 24 24"
-				stroke-width="1.5"
-				stroke="#000"
-				fill="none"
-				stroke-linecap="round"
-				stroke-linejoin="round"
-			>
-				<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-				<path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z" />
-				<path d="M4 12h8" />
-				<path d="M12 15h8" />
-				<path d="M12 9h8" />
-				<path d="M12 4v16" />
-			</svg></span
-		>
+		<span>Nueva coleccion C-137</span>
 	</h1>
 
 	<Carousel.Root>

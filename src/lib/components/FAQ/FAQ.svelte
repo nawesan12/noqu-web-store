@@ -1,4 +1,4 @@
-<script lang="ts">
+<script>
 	import * as Accordion from '$lib/components/ui/accordion';
 	import YoutubeIFrame from '../YoutubeIFrame/YoutubeIFrame.svelte';
 	import * as Dialog from '$lib/components/ui/dialog';
@@ -10,12 +10,15 @@
 		<Accordion.Item value="item-1">
 			<Accordion.Trigger>De que material estan hechas las remeras?</Accordion.Trigger>
 			<Accordion.Content>
-				Todas nuestras «Tees» estan hechas 100% en Algodon Jersey 24/1.
+				Todas nuestras «Tees» y «Bags» estan hechas 100% en algodon jersey 24/1 y lino.
 			</Accordion.Content>
 		</Accordion.Item>
 		<Accordion.Item value="item-2">
 			<Accordion.Trigger>Como se llama este estilo?</Accordion.Trigger>
-			<Accordion.Content>Nuestras «Tees» siguen un estilo Boxy.</Accordion.Content>
+			<Accordion.Content
+				>Todo termina siendo acorde al estilo que quieras llevar, lleva Noqu, no importa de donde
+				vengas</Accordion.Content
+			>
 		</Accordion.Item>
 		<Accordion.Item value="item-3">
 			<Accordion.Trigger>Por que 137?</Accordion.Trigger>

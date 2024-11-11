@@ -12,7 +12,7 @@
 </script>
 
 <button
-	class="absolute hover:brightness-125 hover:invert transition duration-200 z-10 top-4 right-4 bg-black rounded-full p-2"
+	class="absolute hover:brightness-125 hover:invert transition duration-200 z-10 top-4 right-4 bg-black rounded-full p-1"
 	on:click={() => {
 		toast('Producto agregado al carrito', {
 			description: `${product.name}`,
@@ -25,10 +25,10 @@
 	}}
 >
 	<svg
-		width="24"
-		height="24"
+		width="8"
+		height="8"
 		viewBox="0 0 24 24"
-		stroke-width="1.5"
+		stroke-width="1"
 		stroke="#fff"
 		fill="none"
 		stroke-linecap="round"

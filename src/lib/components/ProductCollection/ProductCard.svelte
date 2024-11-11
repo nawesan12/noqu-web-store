@@ -11,13 +11,24 @@
 
 <article class="relative group block">
 	<AddToCartFromCard product={{ image, name, selectedColor, price }} />
-	<a href={`/${name}?color=${selectedColor}`}>
-		<img src={image} alt="" class="h-[350px] w-full object-cover sm:h-[450px]" />
+	<a href={`/${name}?color=${selectedColor}`} class="-z-10">
+		<img
+			src={image}
+			alt=""
+			class="h-[350px] w-full object-cover hover:scale-105 duration-75 sm:h-[450px]"
+		/>
 	</a>
 
-	<div class="mt-1.5">
-		<p class="text-xs capitalize font-semibold text-black">{selectedColor}</p>
+	<div class="mt-1.5 relative z-40 bg-white">
+		<a href="/producto">
+			<div class="mt-3 flex justify-between text-sm">
+				<h3 class="text-black hover:underline group-hover:underline-offset-4">
+					{name}
+				</h3>
 
+				<p class="text-black">${price}</p>
+			</div>
+		</a>
 		<div class="mt-1.5 flex gap-1">
 			<section>
 				<fieldset>
@@ -43,15 +54,5 @@
 				</ul>
 			</section>
 		</div>
-
-		<a href="/producto">
-			<div class="mt-3 flex justify-between text-sm">
-				<h3 class="text-black hover:underline group-hover:underline-offset-4">
-					{name}
-				</h3>
-
-				<p class="text-black">${price}</p>
-			</div>
-		</a>
 	</div>
 </article>
