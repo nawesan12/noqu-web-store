@@ -5,6 +5,8 @@
 	import FAQ from '$lib/components/FAQ/FAQ.svelte';
 	import Footer from '$lib/components/Footer/Footer.svelte';
 	import Menu from '$lib/components/Menu/Menu.svelte';
+
+	import collections from '$lib/data/collections/data.json';
 </script>
 
 <Menu />
@@ -46,7 +48,9 @@
 		<Carousel.Next />
 	</Carousel.Root>
 
-	<Collection />
+	{#each collections as collection}
+		<Collection {collection} />
+	{/each}
 
 	<section class="quoteblock my-8 mb-24">
 		<p class="font-bold text-balance block max-w-min lg:max-w-6xl mx-auto">

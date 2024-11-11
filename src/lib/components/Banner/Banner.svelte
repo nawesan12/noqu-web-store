@@ -33,7 +33,7 @@
 			<h1
 				class="trispace font-bold bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-4xl text-transparent sm:text-5xl"
 			>
-				Noqu137 <br />
+				Noqu<br />
 
 				{#if visible}
 					<p transition:typewriter class="sm:block whitespace-nowrap text-xl">Cosmic Connection</p>

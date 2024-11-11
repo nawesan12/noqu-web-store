@@ -20,10 +20,6 @@
 			<li>
 				<a class="text-gray-700 transition hover:text-gray-700/75" href="/"> Contacto </a>
 			</li>
-
-			<li>
-				<a class="text-gray-700 transition hover:text-gray-700/75" href="/"> Blog </a>
-			</li>
 		</ul>
 
 		<ul class="mt-12 flex justify-center gap-6 md:gap-8">

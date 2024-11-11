@@ -5,18 +5,15 @@
 	export let name: string;
 	export let colors: string[];
 	export let price: number;
+	export let collection: string;
 
 	let selectedColor = colors[0];
 </script>
 
 <article class="relative group block">
 	<AddToCartFromCard product={{ image, name, selectedColor, price }} />
-	<a href={`/${name}?color=${selectedColor}`} class="-z-10">
-		<img
-			src={image}
-			alt=""
-			class="h-[350px] w-full object-cover hover:scale-105 duration-75 sm:h-[450px]"
-		/>
+	<a href={`/c/${collection}/${name}?color=${selectedColor}`} class="-z-10">
+		<img src={image} alt="" class="h-[350px] w-full object-cover sm:h-[450px]" />
 	</a>
 
 	<div class="mt-1.5 relative z-40 bg-white">

@@ -1,0 +1,21 @@
+[
+	{
+		"id": "Nakaru",
+		"name": "Nakaru",
+		"published": true,
+		"lore": "",
+		"products": [
+			{
+				"id": 1,
+				"name": "Hito | Tsuno Bag",
+				"image": "/products/tsunobag.webp",
+				"colors": ["black", "white"],
+				"price": 7900,
+				"lore": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+				"collection": "C-137",
+				"fabric": "Cotton | 100% Algodon",
+				"style": "Streetwear"
+			}
+		]
+	}
+]

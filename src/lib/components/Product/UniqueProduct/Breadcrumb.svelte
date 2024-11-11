@@ -30,9 +30,7 @@
 		</li>
 
 		<li>
-			<a href={`/tienda`} class="block transition hover:text-gray-700">
-				{'Coleccion'}
-			</a>
+			<a href={`/tienda`} class="block transition hover:text-gray-700">Nakaru</a>
 		</li>
 
 		<li class="rtl:rotate-180">

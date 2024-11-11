@@ -8,7 +8,7 @@
 	<h2 class="text-2xl font-semibold my-4">Preguntas Frecuentes</h2>
 	<Accordion.Root>
 		<Accordion.Item value="item-1">
-			<Accordion.Trigger>De que material estan hechas las remeras?</Accordion.Trigger>
+			<Accordion.Trigger>Que materiales usamos?</Accordion.Trigger>
 			<Accordion.Content>
 				Todas nuestras «Tees» y «Bags» estan hechas 100% en algodon jersey 24/1 y lino.
 			</Accordion.Content>
@@ -21,7 +21,7 @@
 			>
 		</Accordion.Item>
 		<Accordion.Item value="item-3">
-			<Accordion.Trigger>Por que 137?</Accordion.Trigger>
+			<Accordion.Trigger>Que es el 137?</Accordion.Trigger>
 			<Accordion.Content
 				>La 137, como concepto propio, simboliza la unicidad y singularidad de la experiencia
 				individual en el tejido del multiverso. Representa la idea de que cada existencia es única,
